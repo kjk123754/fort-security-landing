@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <title>ФОРТ – твоя безпека</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #050811;
+      color: #f5f5f5;
+    }
+    header, section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    h1, h2 {
+      margin-top: 0;
+    }
+    .hero {
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 24px;
+    }
+    .hero-title {
+      font-size: clamp(32px, 4vw, 44px);
+    }
+    .hero-subtitle {
+      font-size: 18px;
+      max-width: 520px;
+      opacity: 0.9;
+    }
+    .hero-form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .hero-form input {
+      padding: 10px 14px;
+      border-radius: 6px;
+      border: none;
+      min-width: 220px;
+    }
+    .hero-form button {
+      padding: 10px 20px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      background: #1e90ff;
+      color: #fff;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    @media (max-width: 768px) {
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <!-- Блок 1: Головний -->
+  <header class="hero">
+    <div>
+      <h1 class="hero-title">ФОРТ – твоя безпека</h1>
+      <p class="hero-subtitle">
+        Встановлення систем відеонагляду, охоронних систем та рішень розумного дому
+        для квартир, будинків, офісів і бізнесу.
+      </p>
+    </div>
+
+    <form class="hero-form">
+      <input type="text" name="name" placeholder="Ім’я" required />
+      <input type="tel" name="phone" placeholder="Номер телефону" required />
+      <button type="submit">Замовити консультацію</button>
+    </form>
+  </header>
+
+  <!-- Блок 2: Наші об’єкти -->
+  <section>
+    <h2>Наші об’єкти</h2>
+    <div class="grid-2">
+      <div>
+        <h3>Відеонагляд</h3>
+        <p>Магазини, склади, приватні будинки, офіси, виробництва.</p>
+      </div>
+      <div>
+        <h3>Охоронні системи</h3>
+        <p>Охоронна сигналізація, датчики, тривожні кнопки, Ajax та інші системи.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Блок 3: Послуги -->
+  <section>
+    <h2>Що ми встановлюємо</h2>
+    <ul>
+      <li>IP та HD-відеокамери, реєстратори, віддалений доступ з телефону</li>
+      <li>Охоронні системи Ajax та інші рішення</li>
+      <li>Системи розумного дому та автоматика</li>
+    </ul>
+  </section>
+
+  <!-- Блок 4: Переваги -->
+  <section>
+    <h2>Чому обирають ФОРТ</h2>
+    <ul>
+      <li>Працюємо «під ключ»: від проєкту до налаштування додатків</li>
+      <li>Підбираємо обладнання під бюджет і задачу</li>
+      <li>Підтримка та сервіс після монтажу</li>
+    </ul>
+  </section>
+
+  <!-- Блок 5: Контакти -->
+  <section>
+    <h2>Залиште контакт — ми передзвонимо</h2>
+    <form class="hero-form">
+      <input type="text" name="name-bottom" placeholder="Ім’я" required />
+      <input type="tel" name="phone-bottom" placeholder="Номер телефону" required />
+      <button type="submit">Отримати консультацію</button>
+    </form>
+  </section>
+
+  <div class="footer">
+    © 2025 ФОРТ. Усі права захищені.
+  </div>
+</body>
+</html>
